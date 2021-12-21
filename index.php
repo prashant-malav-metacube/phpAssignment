@@ -47,7 +47,6 @@ $message1 ="Hey Prashant" ;
 $message2= strrev($message1) ;
 echo "Reverse string is: ".$message2;
 
-// using
 ?>
     
 </body>
