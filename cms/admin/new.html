@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Add new Post Here.....</h2>
+    <div class="add-form">
+
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" name="title" id="title"> <br>
+                <h5 class="addtitle"></h5>
+            </div>
+            <div class="form-group"><label for="Content">Post content:</label> <br>
+                <textarea name="text" id="content" cols="30" rows="10"></textarea> <br>
+            </div>
+
+            <div class="form-group">
+                <label for="cat">Category:</label>
+                <input type="text" name="cat"> <br>
+            </div>
+            <button type="submit">Add</button>
+
+        </form>
+    </div>
+    <script>
+       $(document).ready(function(){
+           $('.addtitle').hide();
+           
+           $('#title').keyup(function(){
+               title_check();
+
+           });
+           function title_check(){
+               var title =$('#title').val();
+               alert(title) ;
+           }
+       });
+    </script>
+</body>
+
+</html>
